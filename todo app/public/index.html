@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAaiq03JhAF0NlR2CvnkJpCxw7iPYxQWdE",
+          authDomain: "todo-c649c.firebaseapp.com",
+          projectId: "todo-c649c",
+          storageBucket: "todo-c649c.appspot.com",
+          messagingSenderId: "812332689104",
+          appId: "1:812332689104:web:eec47739e80c5a3fd820d5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="heading">ToDo App</h1>
+    <div>
+        <input class="input" onclick="this.style.backgroundColor='lightgreen'" onblur="this.style.backgroundColor='white'" placeholder="Enter ToDo" type="text" id="todo-item">
+        <br>
+        <button class="btn1" onclick="addTodo()">ADD ITEM</button>
+        <button class="btn2" onclick="deleteAll()">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ul id="list">
+          
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</html>
